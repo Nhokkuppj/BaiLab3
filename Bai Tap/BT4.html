@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+	<meta charset=utf-8 /> 
+</head> 
+<body> 
+	<p>
+		<a id="somelink" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="http://www.google.com/">Google Website</a>
+	</p> 
+	<button onclick="getAttributes()">Click here to get attributes value</button> 
+	<script>
+		function getAttributes()
+			{
+				var u = document.getElementById("somelink").href;
+				alert('The value of the href attribute of the link is : '+u);
+				var v = document.getElementById("somelink").hreflang;   
+				alert('The value of the hreflang attribute of the link is : '+v);
+				var w = document.getElementById("somelink").rel; 
+				alert('The value of the rel attribute of the link is : '+w);
+				var x = document.getElementById("somelink").target; 
+				alert('The value of the taget attribute of the link is : '+x);
+				var y = document.getElementById("somelink").type; 
+				alert('The value of the type attribute of the link is : '+y);  
+			}
+	</script>
+</body>
+</html> 
